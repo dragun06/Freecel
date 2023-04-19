@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/class.css">
+    <link rel="stylesheet" href="css/radiobtntoswitch.css">
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="src/jquery-3.5.1.min.js"></script>
+    <script src="src/script.js"></script>
+    <title>Freecell</title>
+</head>
+
+<body class="bordeauxbg" style="font-family:Quicksand;">
+    <h1 class="white" id="titlepage">Yu-Gi-Oh in 2021...<br>But it's a Freecell</h1>
+    <button class="bordeauxbg white" id="gobtn">GO</button>
+    <div style="margin-top:-100px;margin-left:18%;">
+        <div class="hidden" id="new">
+            <h1 class="white" id="titlenew">Nouvelle partie</h1>
+            <div class="centerdiv choice" id="roundednew">
+                <a href="game.html">
+                    <img src="img/new.png" alt="Puzzle du millénium">
+                </a>
+            </div>
+        </div>
+        <div class="hidden" id="resume">
+            <h1 class="white" id="titleresume">Continuer une partie</h1>
+            <div class="centerdiv choice" id="roundedresume">
+                <a href="#" target="_blank">
+                    <img src="img/resume.png" alt="Oeil du millénium">
+                </a>
+            </div>
+        </div>
+        <div class="hidden" id="stats">
+            <h1 class="white" id="titlestats">Statistiques</h1>
+            <div class="centerdiv choice" id="roundedstats">
+                <a href="#" id="gotostats">
+                    <img src="img/stats.png" id="imgstats" alt="Balance du millénium">
+                </a>
+                <div id="statssdiv" class="hidden">
+                    <p class="statTxt">Nombres de parties jouées <span id="nbParties" class="statVal"></span></p>
+                    <p class="statTxt">Nombres de parties gagnées<span id="nbPartiesWon" class="statVal"></span></p>
+                    <p class="statTxt">Temps total joué<span id="tpsTot" class="statVal"></span></p>
+                    <p class="statTxt">Meilleur temps<span id="tpsBest" class="statVal"></span></p>
+                    <p class="statTxt">Nombre de coups moyen <br>par partie<span id="moyNbCoups" class="statVal"></span></p>
+                    <p class="statTxt">Meilleure partie<span id="bestNbCoups" class="statVal"></span></p>
+                    <p class="statTxt">Inscrit depuis<span id="date" class="statVal">25/06/2021</span></p>
+                    <a href="#" class="gotomainmenu">Retour</a>
+                </div>
+            </div>
+        </div>
+        <div class="hidden" id="settings">
+            <h1 class="white" id="titlesettings">Paramètres</h1>
+            <div class="centerdiv choice" id="roundedsettings">
+                <a href="#" id="gotosettings">
+                    <img src="img/settings.png" alt="Sceptre du millénium" id="imgsettings">
+                </a>
+                <div id="settingsfields" class="hidden">
+                    <div id="firstrowsettings">
+                        <div id="radiosons">
+                            <p class="titlefield">Sons</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div id="radiotimer">
+                            <p class="titlefield">Timer</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                    </div>
+                    </div>
+                    <div id="email">
+                        <label style="color:black;font-weight:bold;margin-left:155px;font-size: 25px;">Adresse email</label>
+                        <input type="email" style="width:350px;height:50px;background-color:#707070;border:none;border-radius:2em;margin-left:70px;margin-right:80px;margin-top:10px;">
+                    </div>
+                    <div id="thirdrowsettings">
+                        <div id="background-selector">
+                            
+                        </div>
+                    </div>
+                    <div id="savebtn">Enregistrer</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

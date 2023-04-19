@@ -1,0 +1,12 @@
+/* BACKGROUNDS */
+
+.bordeauxbg{background-color: #5C141E;}
+
+/* COLORS */
+
+.white{color:white;}
+
+/* DISPLAY */
+.hidden{display:none;}
+.centerdiv{display:block;margin-left:auto !important;margin-right:auto !important;}
+.right{float:right;}

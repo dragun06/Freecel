@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Partie de Yu-Gi-Cell!</title>
+    <script src="src/dragndrop.js"></script>
+    <script src="src/Partie.js"></script>
+    <script src="src/ChronoCtrl.js"></script>
+    <script src="src/ChronoModele.js"></script>
+    <script src="src/ChronoVue.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="styleTemp.css">
+    <link rel="stylesheet" href="css/class.css">
+</head>
+<body style="background-image:url(img/bg/fmabg.png);background-size: 100%;font-family:Quicksand;margin-left:0px;">
+<template id="modeleCarte"><div class="cartes" draggable="true"></div></template>
+    <div id="menupanneau" class="hidden">
+        <div id="closemenu"></div>
+            <div id="quitter">
+                <a href="index.html" style="color: white;">
+                    <p style="margin-left: auto;margin-right: auto;display: block;height: 10px;top: -5px;position: relative">Quitter la partie</p>
+                </a>
+            </div>
+            <div id="stop">        
+                <a href="game.html" style="color: white;">
+                    <p style="margin-left: auto;margin-right: auto;display: block;height: 10px;top: -5px;position: relative">Recommencer la partie</p>        
+                </a>
+            </div>
+    
+        </div>
+    <div id="menuig"></div>
+<br>
+    <div id="infos">
+        <p id="chrono">Chrono</p>
+        <p id="coups">Nb coups ?</p>
+    </div>
+<br/>
+    <div id="plateau" draggable="false">
+        <div id="plateau_top">
+            <div id="fondation">
+                <p style="position:absolute; top:100px;color:white;width:50%;text-align:center;">"Pile de résultat", déposer les cartes dans le bon ordre de l'as jusqu'au roi</p><br/>
+                <div class="fondation resultat" id="fond1"></div>
+                <div class="fondation resultat" id="fond2"></div>
+                <div class="fondation resultat" id="fond3"></div>
+                <div class="fondation resultat" id="fond4"></div>
+            </div>
+            <div id="freePile">
+                <p style="position:absolute; top:100px;color:white;width:50%;text-align:center;">"Free pile", déposer les cartes empiler qui vous dérange</p>
+                <div class="vide" id="fp1"></div>
+                <div class="vide" id="fp2"></div>
+                <div class="vide" id="fp3"></div>
+                <div class="vide" id="fp4"></div>
+            </div>
+        </div>
+        <div id="cards">
+            <div id="startPile1"></div>
+            <div id="startPile2"></div>
+            <div id="startPile3"></div>
+            <div id="startPile4"></div>
+            <div id="startPile5"></div>
+            <div id="startPile6"></div>
+            <div id="startPile7"></div>
+            <div id="startPile8"></div>
+        </div>
+    </div>
+</body>
+</html>

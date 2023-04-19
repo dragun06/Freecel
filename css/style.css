@@ -1,0 +1,172 @@
+#titlepage
+{
+    margin-top: 200px;
+    font-size:60px;
+    text-align:center;
+    transition: transform 0.6s ease;
+}
+#pseudo {
+    position: absolute;
+    right:20px;
+    top:0px;
+    color:white;
+}
+#gobtn
+{
+    border:none;
+    border-radius:2em;
+    width:8em;
+    height:3em;
+    font-size:40px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    margin-top:5%;
+    box-shadow: 5px 5px 10px black;
+    transition: transform 0.6s ease;
+}
+
+#gobtn:hover
+{
+    box-shadow: inset 5px 5px 10px black;
+}
+
+.choice
+{
+    background-color:white;
+    border-radius:50%;
+    width:150px;
+    height:150px;
+}
+
+div > a > img
+{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+    top:25px;
+    width:100px;
+    height:100px;
+}
+#roundedsettings + #roundednew + #roundedresume + #roundedstats
+{
+    width:50%;
+    height:50%;
+}
+
+#new, #resume, #stats, #settings
+{
+    width:320px;
+    height:300px;
+    position:relative;
+    float:left;
+}
+
+#titlenew, #titleresume, #titlestats, #titlesettings
+{
+    text-align:center;
+}
+
+#settingsdiv
+{
+    width:500px;
+    height:600px;
+    background-color:white;
+    margin-left:10%;
+}
+
+/*  SETTINGS FIELD  */
+
+#firstrowsettings
+{
+    top: 3em;
+    position: relative;
+    width:500px;
+    height:80px;
+}
+#radiosons
+{
+    width:80px;
+    float:left;
+    margin-left:7em;
+}
+
+#radiotimer
+{
+    width:80px;
+    float:right;
+    margin-right:6em;
+}
+
+.titlefield{
+    margin:0;
+    left:8px;
+    position:relative;
+    bottom:5px;
+    font-weight:bold;
+}
+
+#email
+{
+    top: 3em;
+    position: relative;
+    height:50px;
+}
+
+#thirdrowsettings
+{
+    width:500px;
+    height:150px;
+    top: 10em;
+    position: relative;
+}
+
+#background-selector
+{
+    width:350px;
+    height:100%;
+    background-color:#707070;
+    margin-left:75px;
+    margin-right:75px;
+    border-radius:2em;
+}
+
+#savebtn
+{
+    position: relative;
+    top: 11em;
+    margin:auto;
+    height: 30px;
+    padding-top: 6px;
+    font-size: 20px;
+    background-color:#5C141E;
+    color:white;
+    border-radius:1em;
+    text-align:center;
+    width:200px;
+    font-weight:bold;
+}
+
+/*  STATS FIELD  */
+
+#statsfields
+{
+    margin:0px 30px 30px 30px;
+    font-size:20px;
+}
+.statTxt {
+    color: black;
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 25px;
+}
+.statVal {
+    color: black;
+    font-weight: lighter;
+    position: absolute;
+    right: 30px;
+}
+#statssdiv {
+    padding-top: 30px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Enzo, Thomas, Dylan" />
+    <title>Yu-Gi-Cell !</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        window.addEventListener("DOMContentLoaded", (event) => {
+            document.getElementById("log_btn").onclick = async function() {
+                let input = document.getElementById("pseudo").value;
+                await localStorage.setItem("pseudo", input);
+                location += "index.html";
+                function Send() {
+                    var name = document.getElementById("pseudo").value;
+                    var url = "/index.htm?user=" + encodeURIComponent(name);
+                    window.location.href = url;
+                    console.log("envoyé");
+                };
+                Send();
+            }
+        });
+
+    </script>
+</head>
+<body>
+<h1>Bienvenue sur Yu-Gi-Cell !</h1>
+<p>Veuillez vous enregistrer</p>
+<form action="" method="post">
+    <label for="pseudo">Pseudonyme</label>
+    <input type="text" name="pseudo" id="pseudo" required/>
+    <button id="log_btn">Se connecter</button>
+</form>
+</body>
+</html>
